@@ -1,0 +1,14 @@
+﻿---
+ID: 3e731df6-ecb4-45eb-a4fe-da51424d9499
+Parent: a7d6de61-ccc8-4aa4-9d26-0d95b86c82a2
+Template: a87a00b1-e6db-45ab-8b54-636fec3b5523
+Path: /sitecore/system/Settings/Feature/Demo Tools
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      Hint: __Created
+      Value: 20160303T102244Z
