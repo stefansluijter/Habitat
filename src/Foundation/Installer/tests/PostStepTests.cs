@@ -14,7 +14,7 @@
       var postStep = new PostStep(xdt, path);
 
       //act
-      postStep.Run(null, null);
+      postStep.ApplyTransform();
       xdt.Received(1).ApplyConfigTransformation(Arg.Any<string>(), Arg.Any<string>(), Arg.Any<string>());
     }
 
@@ -27,7 +27,7 @@
       var postStep = new PostStep(xdt, path);
 
       //act
-      postStep.Run(null, null);
+      postStep.ApplyTransform();
       xdt.DidNotReceive().ApplyConfigTransformation(Arg.Any<string>(), Arg.Any<string>(), Arg.Any<string>());
     }
 
