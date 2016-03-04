@@ -1,15 +1,4 @@
-﻿SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-
-
-
--- =============================================
--- Author:		ati@sitecore.net
--- Description:	Updates Analytics from given date
--- =============================================
-ALTER PROCEDURE [dbo].[sp_sc_Refresh_Analytics]
+﻿CREATE PROCEDURE [dbo].[sp_sc_Refresh_Analytics]
 	@lastUpdate DATETIME
 AS
 BEGIN

@@ -47,8 +47,10 @@
       var reader = new StreamReader(new FileInfo(refreshAnalytics).OpenRead());
       var query = reader.ReadToEnd();
       var connection = new SqlConnection(connectionstring.ConnectionString);
+      connection.Open();
       var command = new SqlCommand(query, connection);
       command.ExecuteNonQuery();
+      connection.Close();
     }
   }
 }
