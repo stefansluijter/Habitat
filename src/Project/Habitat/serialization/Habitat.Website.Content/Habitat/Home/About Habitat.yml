@@ -79,7 +79,7 @@ Languages:
         <p>The sites demonstrate the full set of capabilities and potential of the platform through a number of both technical and business scenarios.</p>
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: About Habitat
+      Value: "{% ParTech %},About Habitat"
     - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
       Hint: BrowserTitle
       Value: About Habitat

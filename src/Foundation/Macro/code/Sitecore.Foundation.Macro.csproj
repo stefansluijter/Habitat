@@ -125,6 +125,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Macro\IMacro.cs" />
+    <Compile Include="Macro\ParTechMacro.cs" />
+    <Compile Include="Macro\SitecoreMacro.cs" />
     <Compile Include="Pipelines\GetMacroValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

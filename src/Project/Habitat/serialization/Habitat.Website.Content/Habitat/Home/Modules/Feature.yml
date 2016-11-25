@@ -24,7 +24,7 @@ Languages:
       Value: Feature modules are the functionality of the website such as navigation, search, content, accounts, etc. The bulk of the business logic and presentation elements sits in these modules.
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: The Feature Layer
+      Value: "{% ParTech %},The Feature Layer"
     - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
       Hint: BrowserTitle
       Value: Feature

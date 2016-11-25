@@ -24,7 +24,7 @@ Languages:
       Value: Foundation modules form the services of the solution. This is commonly shared functionality such as Dictionaries, Asset handling and more.
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: The Foundation Layer
+      Value: "{% ParTech %},The Foundation Layer"
     - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
       Hint: BrowserTitle
       Value: Foundation

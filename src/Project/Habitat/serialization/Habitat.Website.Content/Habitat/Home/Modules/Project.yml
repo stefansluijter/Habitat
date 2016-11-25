@@ -28,7 +28,7 @@ Languages:
       Value: "The project layer bind the solution together by tying the feature modules together on pages and channels.<br>A solution can have multiple project modules - or sites - sharing features but having their own page types, layouts and visual designs.<br>"
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: The Project Layer
+      Value: "{% ParTech %},The Project Layer"
     - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
       Hint: BrowserTitle
       Value: Project
