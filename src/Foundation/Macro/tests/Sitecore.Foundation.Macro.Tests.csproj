@@ -187,7 +187,7 @@
       <Name>Sitecore.Foundation.Testing</Name>
     </ProjectReference>
     <ProjectReference Include="..\code\Sitecore.Foundation.Macro.csproj">
-      <Project>{812c16c9-1e8a-42dc-a1c0-6896d570f63a}</Project>
+      <Project>{6008c564-b612-451c-92c3-651a939bcb0f}</Project>
       <Name>Sitecore.Foundation.Macro</Name>
     </ProjectReference>
   </ItemGroup>

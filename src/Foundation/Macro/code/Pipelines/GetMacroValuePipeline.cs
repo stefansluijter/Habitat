@@ -10,7 +10,7 @@
     using Sitecore.Foundation.Macro.Macro;
     using Sitecore.Pipelines.RenderField;
 
-    public class GetMacroValue
+    public class GetMacroValuePipeline
     {
         public void Process(RenderFieldArgs args)
         {
@@ -24,28 +24,24 @@
             }
         }
 
-        private string GetValue(Item item, string fieldName, string fieldValue)
+        public string GetValue(Item item, string fieldName, string fieldValue)
         {
-            var regex = @"{%[^@]*%}"; // TODO /gU
+            var pattern = @"\{\%(.+?)\%\}";
+            var value = fieldValue;
 
             if (ValueContainsMacro(fieldValue))
             {
-                // TODO MATCH REGEX UNGREEDY
-                // SO MULTIPLE MATCHES ARE POSSIBLE
-                MatchCollection mcol = Regex.Matches(fieldValue, regex);
-                foreach (Match m in mcol)
+                value =  Regex.Replace(fieldValue, pattern, delegate (Match match)
                 {
-                    var macroValue = m.ToString();
+                    var macroValue = match.ToString().Trim();
 
                     IMacro macro = CreateMacroClassObject(RemoveMacroSyntaxString(macroValue));
-                    
-                    fieldValue = fieldValue.Replace(m.ToString(), macro.Execute(item,fieldName, fieldValue));
-                }
-                
+
+                    return macro.Execute(item, fieldName, fieldValue);
+                });
             }
 
-            return fieldValue;
-
+            return value;
         }
 
         private bool CheckMacroHash(string hash)
